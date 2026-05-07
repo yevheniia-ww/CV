@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+
     <title>Резюме</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,26 +18,31 @@
     <button id="langBtn">English</button>
 
     <div id="ua" class="resume active">
-        <img src="photo.jpg" alt="Моє фото" class="photo">
 
-        <h1>Дзюрбан Євгенія</h1>
-        <h2>Студент / Майбутній web dev з UI/UX & Brand Identity Background</h2>
+        <div class="hero">
+            <img src="photo.jpg" alt="Моє фото" class="photo">
 
-        <section>
+            <div class="hero-text">
+                <h1>Дзюрбан Євгенія</h1>
+                <h2>Студент / Майбутній web dev з UI/UX & Brand Identity Background</h2>
+            </div>
+        </div>
+
+        <section class="card about-card">
             <h3>Про мене</h3>
             <p>
-                Маю бекграунд у UI/UX та Brand Identity, цікавлюся графічним дизайном, UI UX дизайном, веб-розробкою, маю базові навички роботи з SQL та базами даних. Окрім цього маю навички відповідно до своєї спеціальності, здебільшого у сфері експериментальної фізики, роботи з різними операційними системами та програмування (Python, Assembler, bash, базовий C++).
+                Маю бекграунд у UI/UX та Brand Identity, цікавлюся графічним дизайном, UI UX дизайном, веб-розробкою, маю базові навички роботи з SQL та базами даних. Окрім цього маю навички відповідно до своєї спеціальності, здебільшого у сфері експериментальної фізики, роботи з різними операційними системами та програмування (Python, Assembler, bash, базовий C++). Також іноді допомагаю студентам у якості репетитора з математичного аналізу. Наразі мешкаю в Києві, в гуртожитку (тому, власне, на фоні іноді і буває шумно). 
             </p>
         </section>
 
-        <section>
+        <section class="card education-card">
             <h3>Освіта</h3>
             <p>Навчаюся у КПІ ім. Ігоря Сікорського на спеціальності "Кібербезпека, системи технічного захисту інформації" фізичного спрямування</p>
         </section>
 
-        <section>
+        <section class="card skills-card">
             <h3>Навички</h3>
-            <ul>
+            <ul class="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Figma</li>
@@ -45,40 +55,46 @@
             </ul>
         </section>
 
-        <section>
+        <section class="card social-card">
             <h3>Соціальні мережі</h3>
-            <p>
+            <p class="social-links">
                 <a href="https://www.instagram.com/4nxlilgbcq" target="_blank">Instagram</a>
                 <a href="https://www.linkedin.com/in/yevheniia-dziurban" target="_blank">LinkedIn</a>
                 <a href="https://github.com/yevheniia-ww" target="_blank">GitHub</a>
+                <a href="https://www.behance.net/yevhenidziurba1" target="_blank">Behance</a>
             </p>
         </section>
+
     </div>
 
     <div id="en" class="resume">
 
-        <img src="photo.jpg" alt="My photo" class="photo">
-    
-        <h1>Yevheniia Dziurban</h1>
-        <h2>Student / Future Web Developer with UI/UX & Brand Identity Background</h2>
-    
-        <section>
+        <div class="hero">
+            <img src="photo.jpg" alt="My photo" class="photo">
+
+            <div class="hero-text">
+                <h1>Yevheniia Dziurban</h1>
+                <h2>Student / Future Web Developer with UI/UX & Brand Identity Background</h2>
+            </div>
+        </div>
+
+        <section class="card about-card">
             <h3>About Me</h3>
             <p>
-                I have a background in UI/UX and Brand Identity. I am interested in graphic design, UI/UX design, web development, and have basic skills in SQL and database management. In addition, I have skills related to my specialty, mainly in experimental physics, working with different operating systems, and programming (Python, Assembler, Bash, basic C++).
+                I have a background in UI/UX and Brand Identity, and I am interested in graphic design, UI/UX design, and web development. I also have basic skills in SQL and database management. In addition, I have competencies related to my specialty, mainly in experimental physics, working with different operating systems, and programming (Python, Assembler, Bash, basic C++). I also occasionally help students as a tutor in mathematical analysis. Currently, I live in Kyiv in a dormitory (so there may sometimes be background noise).
             </p>
         </section>
-    
-        <section>
+
+        <section class="card education-card">
             <h3>Education</h3>
             <p>
                 I study at Igor Sikorsky Kyiv Polytechnic Institute, majoring in "Cybersecurity and Information Protection Systems" with a physics-oriented specialization.
             </p>
         </section>
-    
-        <section>
+
+        <section class="card skills-card">
             <h3>Skills</h3>
-            <ul>
+            <ul class="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Figma</li>
@@ -90,17 +106,20 @@
                 <li>Mathematical Analysis</li>
             </ul>
         </section>
-    
-        <section>
+
+        <section class="card social-card">
             <h3>Social Media</h3>
-            <p>
+            <p class="social-links">
                 <a href="https://www.instagram.com/4nxlilgbcq" target="_blank">Instagram</a>
                 <a href="https://www.linkedin.com/in/yevheniia-dziurban" target="_blank">LinkedIn</a>
                 <a href="https://github.com/yevheniia-ww" target="_blank">GitHub</a>
+                <a href="https://www.behance.net/yevhenidziurba1" target="_blank">Behance</a>
             </p>
         </section>
-    
+
     </div>
+
+</div>
 
 <script src="script.js"></script>
 </body>
